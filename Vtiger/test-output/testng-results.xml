@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54915" started-at="2021-11-09T18:44:58 IST" finished-at="2021-11-09T18:45:53 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54915" started-at="2021-11-09T18:44:58 IST" finished-at="2021-11-09T18:45:53 IST">
+      <class name="com.testlistner.Testcase1">
+        <test-method status="PASS" signature="configBS()[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="configBS" is-config="true" duration-ms="38" started-at="2021-11-09T18:44:58 IST" finished-at="2021-11-09T18:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method status="PASS" signature="configBC(java.lang.String)[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="configBC" is-config="true" duration-ms="5458" started-at="2021-11-09T18:44:59 IST" finished-at="2021-11-09T18:45:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="setUP(org.testng.ITestResult)[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="setUP" is-config="true" duration-ms="7859" started-at="2021-11-09T18:45:04 IST" finished-at="2021-11-09T18:45:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Testcase1.tc1()[pri:0, instance:com.testlistner.Testcase1@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="tc1()[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="tc1" duration-ms="131" started-at="2021-11-09T18:45:13 IST" finished-at="2021-11-09T18:45:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="tearDown" is-config="true" duration-ms="9377" started-at="2021-11-09T18:45:13 IST" finished-at="2021-11-09T18:45:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP(org.testng.ITestResult)[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="setUP" is-config="true" duration-ms="6552" started-at="2021-11-09T18:45:22 IST" finished-at="2021-11-09T18:45:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Testcase1.tc2()[pri:0, instance:com.testlistner.Testcase1@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="FAIL" signature="tc2()[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="tc2" duration-ms="16" started-at="2021-11-09T18:45:29 IST" finished-at="2021-11-09T18:45:29 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at com.testlistner.Testcase1.tc2(Testcase1.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="tearDown" is-config="true" duration-ms="8481" started-at="2021-11-09T18:45:29 IST" finished-at="2021-11-09T18:45:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUP(org.testng.ITestResult)[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="setUP" is-config="true" duration-ms="6612" started-at="2021-11-09T18:45:38 IST" finished-at="2021-11-09T18:45:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=Testcase1.tc3()[pri:0, instance:com.testlistner.Testcase1@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="SKIP" signature="tc3()[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="tc3" duration-ms="8" started-at="2021-11-09T18:45:44 IST" finished-at="2021-11-09T18:45:44 IST">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipp]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipp
+at com.testlistner.Testcase1.tc3(Testcase1.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="tearDown" is-config="true" duration-ms="8687" started-at="2021-11-09T18:45:44 IST" finished-at="2021-11-09T18:45:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="configAC" is-config="true" duration-ms="223" started-at="2021-11-09T18:45:53 IST" finished-at="2021-11-09T18:45:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method status="PASS" signature="configAS()[pri:0, instance:com.testlistner.Testcase1@4b0b0854]" name="configAS" is-config="true" duration-ms="1" started-at="2021-11-09T18:45:54 IST" finished-at="2021-11-09T18:45:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- com.testlistner.Testcase1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
